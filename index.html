@@ -1,325 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QMarkª - Home</title>
-
-    <!-- Tag Meta, for SEO max 160 characters -->
-    <meta name="description" content="QMarkª, o melhor site de moda com as melhores roupas e calçados para você ficar incrível!">
-    <meta name="author" content="Prof Renato Pereira. Projeto inicial - Alura e BENTO, M. 2023.">
-
-    <!-- Link to Icon -->
-    <link rel="icon" type="image/png" href="assets/img/Favicon-64px.png">
-
-    <!-- Link to Reset CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-
-    <!-- Link to font: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Link to style -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    <!-- Connectin Font Awesome with my login to insert some icones -->
-    <script src="https://kit.fontawesome.com/e36fc46d40.js" crossorigin="anonymous"></script>
-
-    <!-- link to Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moletons Geek</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <div class="logo">🧥 Moletons Geek</div>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Loja</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <nav class="navbar_container">
-            <div class="left_components">
-                <figure class="logo"></figure>
+  <section class="hero">
+    <h1>Vista seu lado geek</h1>
+    <p>Moletons inspirados em filmes, séries, animes e games.</p>
+    <a href="#" class="btn">Ver Coleção</a>
+  </section>
 
-                <!-- Regular Menu -->
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="ourStores.html">Nossas Lojas</a></li>
-                    <li><a href="deals.html">Promoções</a></li>
-                    <li><a href="news.html">Novidades</a></li>
-                </ul>
-            </div>
+  <section class="produtos">
+    <h2>Destaques</h2>
+    <div class="grid-produtos">
+      <div class="produto">
+        <img src="moletom-starwars.jpg" alt="Moletom Star Wars" />
+        <h3>Moletom Star Wars</h3>
+        <p>R$ 149,90</p>
+      </div>
+      <div class="produto">
+        <img src="moletom-anime.jpg" alt="Moletom Naruto" />
+        <h3>Moletom Naruto</h3>
+        <p>R$ 139,90</p>
+      </div>
+      <div class="produto">
+        <img src="moletom-gamer.jpg" alt="Moletom Gamer" />
+        <h3>Moletom Gamer</h3>
+        <p>R$ 159,90</p>
+      </div>
+    </div>
+  </section>
 
-            <!-- Hamburguer Menu (mobile only)-->
-            <div class="hamb">
-                <i class="fa-sharp fa-solid fa-bars fa-lg" style="color: #daff01;"></i>
-            </div>
-
-            <div class="hamb_menu">
-                <i class="fa-sharp fa-regular fa-x fa-lg" style="color: #daff01;"></i>
-                <ul>
-                    <li><a class="menu_selected" href="index.html">Home</a></li>
-                    <li><a href="ourStores.html">Nossas Lojas</a></li>
-                    <li><a href="deals.html">Promoções</a></li>
-                    <li><a href="news.html">Novidades</a></li>
-                </ul>
-            </div>
-
-            <!-- Regular Search -->
-            <div class="search">
-                <form class="search_form" action="">
-                    <input class="search_input" type="text" name="search" placeholder="Digite o produto" data-search>
-                </form>
-        
-                <button class="search_button" data-search-button>
-                    <p>Search</p>
-                </button>
-            </div>
-
-        </nav>
-
-        <!-- Search box (mobile only) -->
-        <div class="search_mobile">
-            <form class="search_form" action="">
-                <input class="search_input" type="text" name="search_mobile" placeholder="Digite o produto" data-search-mobile>
-            </form>
-    
-            <button class="search_button_mobile" data-search-mobile-button>
-                <p>Search</p>
-            </button>
-        </div>
-
-    </header>
-
-    <main>
-
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="banner banner_mobile" src="assets/img/Mobile/Banner_carousel 1 _ 375.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
-                    <img class="banner banner_tablet" src="assets/img/Tablet/Banner_carousel_1_768.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
-                    <img class="banner banner_desktop" src="assets/img/Desktop/Banner_carousel_1_1440.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
-                </div>
-                
-                <div class="swiper-slide">
-                    <h2 class="swiper-title">COLEÇÃO ATEMPORAL</h2> 
-                    <p class="swiper-text">Estilo e qualidade para durar.</p>
-                    <img class="banner banner_mobile" src="assets/img/Mobile/Banner_carousel 2 _ 375.png" alt="Uma mulher morena, de oculos escuros e roupa preta sentada em um sofá, fundo pink salmão">
-                    <img class="banner banner_tablet" src="assets/img/Tablet/Banner_carousel_2_768.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
-                    <img class="banner banner_desktop" src="assets/img/Desktop/Banner_carousel_2_1440.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
-                </div>
-
-                <div class="swiper-slide">
-                    <h2 class="swiper-title swiper-title-2">COLEÇÃO ATEMPORAL</h2> 
-                    <p class="swiper-text swiper-text-2">Alto impacto visual, baixo impacto ambiental.</p>
-                    <img class="banner banner_mobile" src="assets/img/Mobile/Banner_carousel 3 _ 375.png" alt="Um homem moreno vestido com camisa branca e blusa cinza, gravata borboleta e chapéu, fundo vermelho">
-                    <img class="banner banner_tablet" src="assets/img/Tablet/Banner_carousel_3_768.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
-                    <img class="banner banner_desktop" src="assets/img/Desktop/Banner_carousel_3_1440.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
-                </div>
-            </div>
-            <div class="swiper-button-next"><i class="fa-sharp fa-solid fa-caret-right fa-2xl custom-pagination" style="color: #ffffff;"></i></div>
-            <div class="swiper-button-prev"><i class="fa-sharp fa-solid fa-caret-left fa-2xl custom-pagination" style="color: #ffffff;"></i></div>
-            <div class="swiper-pagination"></i></div>
-        </div>
-
-        <section class="category">
-            
-            <h2 class="category_tittle">Busque por categoria:</h2>
-            <div class="cards">
-
-                <div class="category_card">
-                    <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria camiseta.png" alt="uma camisa verde confortável">
-                    <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria camiseta.png" alt="uma camisa verde confortável">
-                    <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria camiseta.png" alt="uma camisa verde confortável">
-                    <p class="category_label category_button">Camisetas</p>
-                </div>
-
-                <div class="category_card">
-                    <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria Bolsas.png" alt="uma bolsa de couro com alça">
-                    <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria Bolsas.png" alt="uma bolsa de couro com alça">
-                    <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria Bolsa.png" alt="uma bolsa de couro com alça">
-                    <p class="category_label category_button">Bolsas</p>
-                </div>
-
-                <div class="category_card">
-                    <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria calçados.png" alt="Um par de tênis modernos">
-                    <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria calçados.png" alt="Um par de tênis modernos">
-                    <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria Calçados.png" alt="Um par de tênis modernos">
-                    <p class="category_label category_button">Calçados</p>
-                </div>
-
-                <div class="category_card">
-                    <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria calças.png" alt="Uma pilha de calças jeans">
-                    <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria calças.png" alt="Uma pilha de calças jeans">
-                    <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria calça.png" alt="Uma pilha de calças jeans">
-                    <p class="category_label category_button">Calças</p>
-                </div>
-
-                <div class="category_card">
-                    <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria Casacos.png" alt="Um casaco marrom confortável">
-                    <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria casacos.png" alt="Um casaco marrom confortável">
-                    <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria casacos.png" alt="Um casaco marrom confortável">
-                    <p class="category_label category_button">Casacos</p>
-                </div>
-
-                <div class="category_card">
-                    <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria óculos.png" alt="Óculos escuro estiloso">
-                    <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria óculos.png" alt="Óculos escuro estiloso">
-                    <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria óculos.png" alt="Óculos escuro estiloso">
-                    <p class="category_label category_button">Óculos</p>
-                </div>
-
-            </div>
-            
-        </section>
-
-        <section class="products">
-
-            <h3 class="products_title">Produtos que estão bombando!</h3>
-
-            <div class="products_container" data-products>
-
-                <!-- Products will be loaded here -->
-
-            </div>
-
-        </section>
-
-        <section class="product_modal">
-            
-            <div id="modal" class="modal">
-                <div class="modal_content">
-                    <div class="modal_header">
-                        <i class="fa-regular fa-circle-check fa-2xl modal_icon" style="color: #daff01;"></i>
-                        <p class="modal_header_title">Confira detalhes sobre o produto</p>
-                        <span class="close">&times;</span>
-                    </div>
-
-                    <div class="modal_outer_content">
-
-                        <!-- Modal Content goes here -->
-
-                    </div>
-                   
-                
-                </div>
-            </div>
-
-        </section>
-
-        <section class="newsletter_modal">
-            
-            <div id="modal_newsletter" class="modal modal_newsletter">
-                <div class="modal_content_newsletter">
-                    <div class="modal_header">
-                        <i class="fa-regular fa-circle-check fa-2xl modal_icon" style="color: #daff01;"></i>
-                        <p class="modal_header_title">E-mail cadastrado com sucesso!</p>
-                        <span class="news_close">&times;</span>
-                    </div>
-
-                    <div class="modal_outer_content_newsletter">
-                        <p>Em breve você receberá novidades exclusivas da Meteora.</p>
-                    </div>
-                   
-                </div>
-            </div>
-        </section>
-
-        <section class="infos">
-            
-            <h3 class="infos_title">Conheça todas as nossas facilidades</h3>
-
-            <div class="infos_container">
-
-                <div class="infos_topic">
-                    <div class="infos_left">
-                        <img class="infos_mobile" src="assets/img/Mobile/Ícones/x-diamond.png" alt="Ícone do PIX, sinalizando que a loja aceita pagamentos via PIX">
-                        <img class="infos_tablet" src="assets/img/Tablet/Ícones/x-diamond (1).png" alt="Ícone do PIX, sinalizando que a loja aceita pagamentos via PIX">
-                        <img class="infos_desktop" src="assets/img/Desktop/Ícones/x-diamond (2).png" alt="Ícone do PIX, sinalizando que a loja aceita pagamentos via PIX">
-                    </div>
-                    <div class="infos_right">
-                        <h4 class="infos_label">PAGUE PELO PIX</h4>
-                        <p class="infos_text infos_text_1">Ganhe 5% OFF em pagamentos via PIX</p>
-                    </div>
-                </div>
-
-                <div class="infos_topic">
-                    <div class="infos_left">
-                        <img class="infos_mobile" src="assets/img/Mobile/Ícones/arrow-repeat.png" alt="Duas setas em circulo formando um loop">
-                        <img class="infos_tablet" src="assets/img/Tablet/Ícones/arrow-repeat (1).png" alt="Duas setas em circulo formando um loop">
-                        <img class="infos_desktop" src="assets/img/Desktop/Ícones/arrow-repeat (2).png" alt="Duas setas em circulo formando um loop">
-                    </div>
-                    <div class="infos_right">
-                        <h4 class="infos_label">TROCA GRÁTIS</h4>
-                        <p class="infos_text">Fique livre para trocar em até 30 dias.</p>
-                    </div>
-                </div>
-
-                <div class="infos_topic">
-                    <div class="infos_left">
-                        <img class="infos_mobile" src="assets/img/Mobile/Ícones/flower1.png" alt="Uma flor, simbolizando o sentimento de responsabilidade ambiental">
-                        <img class="infos_tablet" src="assets/img/Tablet/Ícones/flower1 (1).png" alt="Uma flor, simbolizando o sentimento de responsabilidade ambiental">
-                        <img class="infos_desktop" src="assets/img/Desktop/Ícones/flower1 (3).png" alt="Uma flor, simbolizando o sentimento de responsabilidade ambiental">
-                    </div>
-                    <div class="infos_right">
-                        <h4 class="infos_label">Sustentabilidade</h4>
-                        <p class="infos_text">Moda responsável, que respeita o meio ambiente.</p>
-                    </div>
-
-                </div>  
-
-            </div>
-
-        </section>
-
-        <section class="newsletter">
-            <div class="newsletter_container">
-                <p class="newsletter_text">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
-                <div class="newsletter_form">
-                    <input class="newsletter_input" type="email" name="email" id="" placeholder="Digite seu e-mail">
-                    <button class="newsletter_button">Enviar</button>
-                </div>
-                <p class="newsletter_error_alert">E-mail inválido!</p>
-            </div>
-        </section>
-
-        <!-- link do scripts in body -->
-        <script src="assets/js/index.js"></script>
-
-        <!-- link do script showProducts (Conexão via API ao DB.JSON) -->
-        <script type='module' src="assets/js/showProducts.js"></script>
-
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                bulletClass: 'swiper-pagination-bullet',
-                bulletActiveClass: 'swiper-pagination-bullet-active',
-                bulletElement: 'span',
-                clickable: true,
-                renderBullet: function (index, className) {
-                return '<span class="' + className + '"></span>';
-                }
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            });
-        </script>
-
-    </main>
-
-    <footer>
-        <p class="footer_text">2024 © Desenvolvido por Pablo | Projeto fictício inicial Alura. E, código aberto sem fins comerciais - BENTO, M. 2023.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Moletons Geek. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
